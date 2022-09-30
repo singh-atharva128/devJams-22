@@ -14,27 +14,29 @@ body {
     background-size: 1500px 775px;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
 }
 
-nav {
+/*.navbar {
     overflow: auto;
     width: 100%;
 }
 
-nav .menu li{
+.navbar .menu li {
     float: left;
     width: 16%;
     text-align: center;
     list-style-type: none;
     padding: 12px 0px;
+    position: relative;
 }
 
-nav .menu  a{
-
+.navbar .menu a {
+    text-decoration: none;
     display: inline-block;
     font-family: 'be vietnam';
     color: #fff;
-    
+
 }
 
 .dropdown {
@@ -42,19 +44,111 @@ nav .menu  a{
     overflow: hidden;
 }
 
-.dropdown .Blogs {
+.dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
+
     background-color: inherit;
     font-family: inherit;
     margin: 0;
 }
 
-.blog-content {
+.dropdown-content {
+
+    position: relative;
+    background-color: black;
+    min-width: 30px;
+    /*box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+*/
+/*nav a:hover,.dropdown:hover .dropbtn {
+    color: red;
+    /*background-color: red;
+}
+
+.dropdown-content {
+
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }*/
+
+/*.sub-menu-1
+{
     display: none;
+    
+}
+
+nav .menu li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: rgb(0,12);
+    margin-top: 15px;
+    margin-left: -15px;
+
+}
+
+nav .menu li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px
+}*/
+/*
+.dropdown {
+    
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .Blogs {
+
+    display: block;
+    position: absolute;
+    
+    /*font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    /*padding: 14px 16px;
+    padding-left: 35px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.blog-content ul{
+    display: block;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
@@ -70,3 +164,157 @@ nav .menu  a{
     display: block;
     text-align: left;
 }
+*/
+
+.menu-bar{
+    /*background: rgb;*/
+    text-align: center;
+    
+}
+
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style: none;
+    color: white;
+}
+
+.menu-bar ul li
+{
+    width: 120px;
+    margin : 15px;
+    padding: 15px;
+}
+
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color: white;
+
+}
+
+.menu-bar ul li a:hover
+{
+    color: red;
+
+}
+
+.menu-bar .fa
+{
+    margin-right: 8px;
+}
+
+.sub-menu-1
+{
+    display: none;
+
+}
+
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    background: transparent;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display: block;
+    margin: 10px;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    text-align: left;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+}
+
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover
+{
+    color: red;
+}
+
+/*
+.navbar {
+    overflow: hidden;
+    /*background-color: #333;
+    font-family: Arial;
+    width: 100%;
+  }
+  
+  
+  .navbar a {
+    float: left;
+    /*font-size: 16px;
+
+    width: 20%;
+    
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+*/
+/*
+  .dropdown .dropbtn {
+    /*font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; 
+    margin: 0; 
+  }*/
+  
+  /*
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    /*background-color: red;
+    color: red;
+  }
+  
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+ 
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }*/
