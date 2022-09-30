@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "be vietnam";
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("bg_img.jpg");
+    background-size: 1500px 775px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+nav {
+    overflow: auto;
+    width: 100%;
+}
+
+nav .menu li{
+    float: left;
+    width: 16%;
+    text-align: center;
+    list-style-type: none;
+    padding: 12px 0px;
+}
+
+nav .menu  a{
+
+    display: inline-block;
+    font-family: 'be vietnam';
+    color: #fff;
+    
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .Blogs {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.blog-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.blog-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
