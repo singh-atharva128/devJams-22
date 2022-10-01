@@ -2,6 +2,7 @@
 
 <html lang="en">
 
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,6 +16,9 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome/min.css"
         crossorigin="anonymous">
+
+
+    <link rel="icon" type="x-icon" href="favicon.ico">
 </head>
 
 <body>
@@ -97,30 +101,144 @@
         <ul>
 
             <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">About Us</i></a>
+            <li><a href="#about"><i class="fa fa-user">About Us</i></a>
 
-                <div class = "sub-menu-1">
+                <div class="sub-menu-1">
                     <ul>
-                        <li><a href="#">Mission</a></li>
-                        <li><a href="#">Vision</a></li>
-                        <li><a href="#">Team</a></li>
+                        <li><a href="#objective">Objective</a></li>
+                        <li><a href="#vision">Vision</a></li>
+                        <li><a href="#team">Team</a></li>
                     </ul>
-
-
-
                 </div>
 
+            </li>
+
+            <li><a href="#home"><i class="fa fa-comment">Blogs</i></a>
+
+                <div class="sub-menu-1">
+                    <ul>
+                        <li><a href="First_Blog.html" target="_blank">Google Maps</a></li>
+                        <li><a href="#">Blog 2</a></li>
+                        <li><a href="#">Blog 3</a></li>
+                    </ul>
+                </div>
 
             </li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
-            <li><a href="#home"><i class="fa fa-home">Home</i></a></li>
+            <li><a href="#home"><i class="fa fa-newspaper-o">Feed</i></a></li>
+            <li><a href="#home"><i class="fa fa-home">Tutorial</i></a></li>
+            <li><a href="#home"><i class="fa fa-home">Courses</i></a></li>
+            <li><a href="#home"><i class="fa fa-home">Contact</i></a></li>
+
 
         </ul>
     </div>
+
+    <div class="header">
+        <h1 title="Day-3">Tech 101</h1>
+
+        <div id="google_translate_element"></div>
+
+
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({ pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE }, 'google_translate_element');
+            }
+        </script>
+
+        <script type="text/javascript"
+            src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+    </div>
+
+
+
+
+    <div class="content">
+        <ul>
+            <li>
+                <p style="margin-top: 250px;  margin-left: 150px; background: linear-gradient(180deg,#ffb6ff,#b344ff);background-clip: inherit;-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                    Keeping up with technology can be hard
+                </p>
+
+                <p style="margin-left: 150px;background: linear-gradient(60deg, #E21143, #FFB03A);background-clip: inherit;-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                    Especially if it changes rapidly
+                </p>
+            </li>
+<!--
+            <li><img src="tech_trends.jpg" alt="Tech Trends" style="margin-top: 250px; margin-left: 250px;"></li>-->
+        </ul>
+        <ul>
+            <li>
+                <p style="margin-top: 50px; margin-left: 150px; font-size: 500%; background: -webkit-linear-gradient(red,yellow);
+                background-clip: inherit;-webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">
+                    Feels like yesterday that internet had a long wait to show a webpage and now...
+                </p>
+            </li>
+
+        </ul>
+
+        <ul>
+            <li>
+                <p style="margin-top: 50px; margin-left: 150px;">
+                
+                <a>There is AI creating art</a>
+            
+                </p>
+            </li>
+
+            <li>
+                <img src="AI_img.jpg" style= "margin-top: 50px; width: 75%; margin-left:150px;" alt="AI">
+            </li>
+        </ul>
+
+        <ul>
+            <li style= "background: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">
+                <p style="margin-top: 50px; margin-left: 150px; font-size: 75px;">
+                    This is your one stop shop to learn about google maps to even unravel the world of Tech
+                </p>
+            </li>
+        </ul>
+    </div>
+    <!--
+    <div id = "google_translate_element"></div>
+    <script src = "https://translate.google.com/translate_a/element.js?cb=loadGoogleTranslate">
+
+    </script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() 
+        {
+          new google.translate.TranslateElement("google_element");
+        }
+    </script>
+-->
+    <section class="about" id="about" style="font-size: 45px;">
+        <h1>About Us</h1>
+        <div class="objective" id="objective">
+            <h2>Objective</h2>
+            <p>To make the newer technologies accessible to technically challenged people</p>
+        </div>
+
+        <div class="vision" id="vision">
+            <h2>Vision</h2>
+            <p>A Bible to know the ins and outs of any technology that avoids searching google for hours to look for answers in n number of articles,
+                 instead having a site so intricate yet so easy to read and understand in any language.
+            </p>
+        </div>
+
+        <div class="team" id = "team">
+            <h3>Team</h3>
+            <p><a>Atharva Singh</a></p>
+            <p><a>Harshit Vijay Kumar</a></p>
+        </div>
+
+    </section>
+
 </body>
 
 </html>

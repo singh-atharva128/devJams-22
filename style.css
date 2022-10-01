@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -11,9 +12,10 @@
 
 body {
     background-image: url("bg_img.jpg");
-    background-size: 1500px 775px;
+    background-size: 1575px 745px;
+    /*background-size: cover;*/
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
 
 }
 
@@ -166,52 +168,56 @@ nav .menu li:hover .sub-menu-1 ul{
 }
 */
 
-.menu-bar{
+.menu-bar {
     /*background: rgb;*/
     text-align: center;
-    
+
 }
 
-.menu-bar ul
+.menu-bar .sticky ul li a
 {
+    padding: auto;
+    background:crimson;
+}
+
+.menu-bar ul {
     display: inline-flex;
     list-style: none;
     color: white;
 }
 
-.menu-bar ul li
-{
+.menu-bar ul li {
     width: 120px;
-    margin : 15px;
+    margin: 15px;
     padding: 15px;
 }
 
-.menu-bar ul li a
-{
+.menu-bar ul li a {
     text-decoration: none;
     color: white;
 
 }
 
-.menu-bar ul li a:hover
-{
+.menu-bar ul li a:hover {
     color: red;
 
 }
 
-.menu-bar .fa
-{
+.menu-bar .sticky ul li a:hover{
+    color: wheat;
+}
+
+.menu-bar .fa {
+    padding-left: 5px;
     margin-right: 8px;
 }
 
-.sub-menu-1
-{
+.sub-menu-1 {
     display: none;
 
 }
 
-.menu-bar ul li:hover .sub-menu-1
-{
+.menu-bar ul li:hover .sub-menu-1 {
     display: block;
     position: absolute;
     background: transparent;
@@ -219,13 +225,12 @@ nav .menu li:hover .sub-menu-1 ul{
     margin-left: -15px;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul
-{
+.menu-bar ul li:hover .sub-menu-1 ul {
     display: block;
     margin: 10px;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li{
+.menu-bar ul li:hover .sub-menu-1 ul li {
     width: 150px;
     padding: 10px;
     border-bottom: 1px dotted #fff;
@@ -233,15 +238,113 @@ nav .menu li:hover .sub-menu-1 ul{
     text-align: left;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li:last-child
-{
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child {
     border-bottom: none;
 }
 
-.menu-bar ul li:hover .sub-menu-1 ul li a:hover
-{
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover {
     color: red;
 }
+
+.header {
+    /*padding:128px 16px;*/
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*align-items: center;*/
+    margin: 250px 0px auto 150px;
+    font-size: 500%;
+    text-align: center;
+}
+
+.header h1 {
+    word-spacing: 150px;
+}
+
+
+.content p {
+    /*margin-top: 21150px;*/
+    padding: 10px;
+}
+
+.content ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.content ul li p {
+    font-family: "Montserrat";
+    font-size: 700%;
+}
+
+.content ul li img {
+    width: 50%;
+    /*margin-top: 250px; 
+    margin-left: 250px;*/
+}
+
+.content ul li p a {
+    font-size: 72px;
+
+    /*background: linear-gradient(to right, #f32170,
+                    #ff6b08, #cf23cf, #eedd44);*/
+
+    background: linear-gradient(90deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
+    /*background: -webkit-linear-gradient(#eee, #333);*/
+
+    background-clip: inherit;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about h1,h2,h3,p{
+    margin-top: 50px; margin-left: 150px;
+    font-family: "Montserrat";
+}
+
+.about .objective{
+    color: whitesmoke;
+    padding: 25px;
+    background: linear-gradient(90deg,#26de8e,#45cc39 24%,#43ea57 45%,#c5ed4d 76%,#a3ec3ddb);
+    
+    background-clip: content-box;  
+    border-radius: 75px;
+}
+
+.about .objective h2,p{
+    font-size: 40px;
+}
+
+.about .vision{
+    color: whitesmoke;
+    padding: 25px;
+    background: linear-gradient(60deg, #E21143, #FFB03A);
+    
+    background-clip: content-box;  
+    border-radius: 75px;
+}
+
+.about .vision h2,p{
+    font-size: 50px;
+}
+
+
+/*.content ul li p .ai
+{
+    font-size: 700%;
+    font-family:"Montserrat";
+}*/
+
+/*
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) 
+  .sticky + .content {
+    padding-top: 60px;
+  }*/
 
 /*
 .navbar {
@@ -282,8 +385,8 @@ nav .menu li:hover .sub-menu-1 ul{
     font-family: inherit; 
     margin: 0; 
   }*/
-  
-  /*
+
+/*
   .navbar a:hover, .dropdown:hover .dropbtn {
     /*background-color: red;
     color: red;
