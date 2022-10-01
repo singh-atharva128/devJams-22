@@ -104,23 +104,12 @@ p{
     color: red;
 }
 
-.content {
-    padding: 0 18px;
-    float:left;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-}
-.collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
-    font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
-  }
-.active:after {
-    content: "\2796"; /* Unicode character for "minus" sign (-) */
+iframe{
+    align-self:center;
+    width:420px;
+    height:20vw;
+    border:double;
+    border-color:#fff;
 }
 
 .g_blue{
