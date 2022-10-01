@@ -5,11 +5,8 @@ h1{
     text-align : center;
     align-items: center;
     text-decoration: none;
-    font-size: 500%;
     font-family:serif;
     color:#fff;
-
-    /*letter-spacing:-8px;*/
 } 
 h2{
     font-family:'Arial Narrow Bold';
@@ -27,18 +24,21 @@ p{
     width: 8%;
     text-align: center;
 }
-.a{
-    display: block;
+.index a{
+    display: flex;
     color: rgb(255,255,255);
-    text-align: center;
+    width:fit-content;
+    text-align:center;
     padding: 1vw;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
-    overflow: hidden;
-    background-color: rgb(58, 158, 240);
+    overflow:hidden;
+    background-color:rgb(56, 84, 109)
 }
-
+.index a:hover{
+    background-color: rgb(32, 49, 88)
+}
 
 .header_img{
     align-items:flex-start;
@@ -109,6 +109,7 @@ p{
 
 iframe{
     align-self:center;
+    align-items:center;
     width:420px;
     height:920px;
     border:double;
